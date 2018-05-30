@@ -4,10 +4,16 @@
 
 body {
  font-family: 'Roboto', sans-serif;
+ background: #654ea3;
+ /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);
+ /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #eaafc8, #654ea3);
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 h1 {
- background: rgb(63, 63, 129);
+ background: rgb(123, 123, 172);
  color: white;
  margin: 0;
  padding: 10px 20px;
@@ -27,6 +33,11 @@ li {
  height: 40px;
  line-height: 40px;
  color: #666;
+}
+
+li:hover span {
+ width: 40px;
+ opacity: 1.0;
 }
 
 li:nth-child(2n) {
@@ -51,11 +62,28 @@ input {
  background-color: #f7f7f7;
  width: 100%;
  padding: 13px 13px 13px 20px;
- color: rgb(63, 63, 129);
+ color: rgb(123, 123, 172);
+ border: 3px solid rgba(0, 0, 0, 0);
 }
 
 input:focus {
  background: white;
- border: 3px solid rgb(63, 63, 129);
+ border: 3px solid rgb(123, 123, 172);
  outline: none;
+}
+
+.fa-plus {
+ float: right;
+}
+
+span {
+ background: red;
+ height: 40px;
+ margin-right: 20px;
+ text-align: center;
+ color: white;
+ display: inline-block;
+ width: 0;
+ transition: 0.2s linear;
+ opacity: 0;
 }

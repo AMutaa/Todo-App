@@ -16,6 +16,6 @@ $("input[type='text']").keypress(function (event) {
  if (event.which === 13) {
   var todoText = $(this).val(); /*grabbing new todo text from input*/
   $(this).val(""); /*clearing the input*/
-  $("ul").append("<li><span>X</span> " + todoText + "</li>"); /*create a new li and add to the ul*/
+  $("ul").append("<li><span><i class='fas fa-trash-alt'></i></span> " + todoText + "</li>"); /*create a new li and add to the ul*/
  }
 });
