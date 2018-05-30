@@ -28,6 +28,10 @@ ul {
  padding: 0;
 }
 
+.fa-plus {
+ float: right;
+}
+
 li {
  background: white;
  height: 40px;
@@ -72,11 +76,7 @@ input:focus {
  outline: none;
 }
 
-.fa-plus {
- float: right;
-}
-
-span {
+li span {
  background: red;
  height: 40px;
  margin-right: 20px;

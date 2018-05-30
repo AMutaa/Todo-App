@@ -19,3 +19,9 @@ $("input[type='text']").keypress(function (event) {
   $("ul").append("<li><span><i class='fas fa-trash-alt'></i></span> " + todoText + "</li>"); /*create a new li and add to the ul*/
  }
 });
+
+// the plus button
+
+$("#toggle-form").click(function () {
+ $("input[type = 'text']").fadeToggle();
+});
