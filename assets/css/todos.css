@@ -1,89 +1,94 @@
 * {
- box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
- font-family: 'Roboto', sans-serif;
- background: #654ea3;
- /* fallback for old browsers */
- background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);
- /* Chrome 10-25, Safari 5.1-6 */
- background: linear-gradient(to right, #eaafc8, #654ea3);
- /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Roboto", sans-serif;
+  background: #ffefba; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #ffefba
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #ffefba
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 h1 {
- background: rgb(123, 123, 172);
- color: white;
- margin: 0;
- padding: 10px 20px;
- text-transform: uppercase;
- font-size: 24px;
- font-weight: normal;
+  background: rgb(123, 123, 172);
+  color: white;
+  margin: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: normal;
 }
 
 ul {
- list-style: none;
- margin: 0;
- padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .fa-plus {
- float: right;
+  float: right;
 }
 
 li {
- background: white;
- height: 40px;
- line-height: 40px;
- color: #666;
+  background: white;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
 }
 
 li:hover span {
- width: 40px;
- opacity: 1.0;
+  width: 40px;
+  opacity: 1;
 }
 
 li:nth-child(2n) {
- background: #f7f7f7;
+  background: #f7f7f7;
 }
 
 #container {
- border: 2px solid gray;
- width: 360px;
- margin: 100px auto;
- background: #f7f7f7;
- box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border: 2px solid gray;
+  width: 360px;
+  margin: 100px auto;
+  background: #f7f7f7;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .completed {
- color: gray;
- text-decoration: line-through;
+  color: gray;
+  text-decoration: line-through;
 }
 
 input {
- font-size: 18px;
- background-color: #f7f7f7;
- width: 100%;
- padding: 13px 13px 13px 20px;
- color: rgb(123, 123, 172);
- border: 3px solid rgba(0, 0, 0, 0);
+  font-size: 18px;
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  color: rgb(123, 123, 172);
+  border: 3px solid rgba(0, 0, 0, 0);
 }
 
 input:focus {
- background: white;
- border: 3px solid rgb(123, 123, 172);
- outline: none;
+  background: white;
+  border: 3px solid rgb(123, 123, 172);
+  outline: none;
 }
 
 li span {
- background: red;
- height: 40px;
- margin-right: 20px;
- text-align: center;
- color: white;
- display: inline-block;
- width: 0;
- transition: 0.2s linear;
- opacity: 0;
+  background: red;
+  height: 40px;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  width: 0;
+  transition: 0.2s linear;
+  opacity: 0;
 }
